@@ -36,6 +36,8 @@ Where:
 
 -pred → Predicted animal class
 
+-pred_idx → The index of the predicted class in the model’s vocabulary
+
 -probs → Probabilities for all 10 classes
 
 Feature Importance Analysis
