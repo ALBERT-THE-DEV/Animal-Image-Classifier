@@ -31,7 +31,9 @@ Files in Repository
 Model Details
 --------------
 pred, pred_idx, probs = learn.predict(image)
+
 Where:
+
 -pred → Predicted animal class
 -probs → Probabilities for all 10 classes
 
