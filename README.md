@@ -14,18 +14,9 @@ Workflow
 
 -Output: Predicted animal class with confidence levels
 
-How to Use
-----------
-1. Clone the repository.
-2. Install the required packages using the command: pip install -r requirements.txt
-3. Run the Streamlit app using the command: streamlit run streamlit_animal.py
-4. Upload an image to get the predicted animal class.
-
 Files in Repository
 -------------------
 - streamlit_animal.py: Streamlit web application
-- animal_classifier.pkl: Trained FastAI model
-- imagemodel_training.py: Script used to train the ResNet34 model
 - requirements.txt: Python packages required to be installed
 
 Model Details
@@ -56,12 +47,6 @@ After training, the following features were found to have the most significant i
 | Sheep        | Wool texture               |
 | Spider       | Legs, body shape           |
 | Squirrel     | Tail, posture              |
-
-Deployment
-----------
-The app is deployed online using Streamlit Cloud and can be accessed at: https://animal-image-classifier-e7fvt3o5ep2qnswwsv4mau.streamlit.app/
-
-The model can also be run locally using the instructions above.
 
 Model Performance
 -----------------
