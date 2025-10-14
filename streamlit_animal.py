@@ -4,10 +4,6 @@ import pathlib
 import gdown
 import os
 
-# Fixes Linux→Windows model compatibility
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
-
 model_path = "animal_classifier.pkl"
 if not os.path.exists(model_path):
     gdown.download(
@@ -77,6 +73,7 @@ if uploaded_file is not None:
 
 else:
     st.info("Upload an animal image file to start classification.")
+
 
 
 
