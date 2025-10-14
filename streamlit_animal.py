@@ -70,17 +70,20 @@ uploaded_file = st.file_uploader(
 
 # Prediction
 if uploaded_file is not None:
-    # Convert uploaded file to PIL image
+    # Load image with PIL
     img = Image.open(uploaded_file)
-    img = PILImage.create(img)  # Convert to FastAI image
+    
+    # Display the image using raw PIL (no to_thumb)
+    st.image(img, caption="📸 Uploaded Image", use_container_width=True)
 
-    st.image(img.to_thumb(512, 512), caption="📸 Uploaded Image", use_container_width=True)
+    # Convert to FastAI PILImage only for prediction
+    fastai_img = PILImage.create(img)
 
     if st.button("Predict Animal", help="Click to predict the animal type", type="primary"):
         with st.spinner("Analyzing the image... 🧠"):
-            pred, pred_idx, probs = learn.predict(img)
+            pred, pred_idx, probs = learn.predict(fastai_img)
 
         st.success(f"### Prediction: {pred.capitalize()}")
         st.write(f"**Confidence:** {probs[pred_idx]*100:.2f}%")
-else:
-    st.info("Upload an animal image file to start classification.")
+
+
