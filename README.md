@@ -59,7 +59,7 @@ After training, the following features were found to have the most significant i
 
 Deployment
 ----------
-The app is deployed online using Streamlit Cloud and can be accessed at: 
+The app is deployed online using Streamlit Cloud and can be accessed at: https://animal-image-classifier-e7fvt3o5ep2qnswwsv4mau.streamlit.app/
 
 The model can also be run locally using the instructions above.
 
