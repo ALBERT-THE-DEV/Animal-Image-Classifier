@@ -1,33 +1,32 @@
 import streamlit as st
 from fastai.vision.all import *
 from PIL import Image
-import pathlib
 import gdown
 import os
 
 # ------------------------------
-# Download & load model
+# 1️⃣ Download & Load Model
 # ------------------------------
-model_path = "animal_classifier_inference.pkl"  # use inference-ready pkl
-if not os.path.exists(model_path):
+MODEL_PATH = "animal_classifier_inference.pkl"
+GOOGLE_DRIVE_ID = "15aWYj_T7vg-xQlJ10C4okUhJKaJWGmmW"  # replace with your file ID
+
+# Download the model if it doesn't exist
+if not os.path.exists(MODEL_PATH):
     gdown.download(
-        "https://drive.google.com/uc?id=15aWYj_T7vg-xQlJ10C4okUhJKaJWGmmW",
-        model_path,
+        f"https://drive.google.com/uc?id={GOOGLE_DRIVE_ID}",
+        MODEL_PATH,
         quiet=False
     )
 
-# Fix Linux → Windows path compatibility
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
-
 # Load the FastAI learner
-learn = load_learner(model_path)
+learn = load_learner(MODEL_PATH)
 
 # ------------------------------
-# Streamlit page setup
+# 2️⃣ Streamlit Page Setup
 # ------------------------------
 st.set_page_config(
     page_title="Animal Image Classifier",
+    page_icon="🐾",
     layout="centered"
 )
 
@@ -38,7 +37,7 @@ with st.sidebar:
 Animal Classifier App  
 Built with FastAI (ResNet34) and Streamlit.
 
-This model classifies images into one of 10 animal categories:  
+Classifies images into one of 10 animal categories:  
 Dog, Cat, Horse, Elephant, Butterfly, Chicken, Cow, Sheep, Spider, Squirrel.
 """)
     st.markdown("---")
@@ -53,9 +52,9 @@ Dog, Cat, Horse, Elephant, Butterfly, Chicken, Cow, Sheep, Spider, Squirrel.
     st.markdown("💡 Tip: Upload a clear animal image for best predictions")
 
 # ------------------------------
-# Main page
+# 3️⃣ Main Page
 # ------------------------------
-st.title("Animal Image Classifier")
+st.title("🐾 Animal Image Classifier")
 st.write("Upload an animal image to predict its type")
 st.markdown("---")
 
@@ -65,13 +64,15 @@ uploaded_file = st.file_uploader(
     type=["jpg", "jpeg", "png", "bmp", "gif", "webp"]
 )
 
-# Prediction logic
+# ------------------------------
+# 4️⃣ Prediction Logic
+# ------------------------------
 if uploaded_file is not None:
-    # Load uploaded image with PIL
+    # Load image with PIL
     img = Image.open(uploaded_file)
     st.image(img, caption="📸 Uploaded Image", use_container_width=True)
 
-    # Convert to FastAI PILImage for prediction
+    # Convert to FastAI image
     fastai_img = PILImage.create(img)
 
     if st.button("Predict Animal", help="Click to predict the animal type", type="primary"):
@@ -83,3 +84,4 @@ if uploaded_file is not None:
 
 else:
     st.info("Upload an animal image file to start classification.")
+
