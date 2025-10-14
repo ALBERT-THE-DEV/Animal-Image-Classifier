@@ -16,8 +16,9 @@ Workflow
 
 Files in Repository
 -------------------
-- streamlit_animal.py: Streamlit web application
-- requirements.txt: Python packages required to be installed
+-streamlit_animal.py: Streamlit web application
+  
+-requirements.txt: Python packages required to be installed
 
 Model Details
 --------------
