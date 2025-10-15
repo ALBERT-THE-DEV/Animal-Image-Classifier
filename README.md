@@ -36,6 +36,31 @@ How to use
    
 4. Upload an animal image through the app to get predictions with confidence scores.
 
+Screenshots
+-----------
+1. Webapp interface
+![App Interface](screenshots/interface.png)
+
+2. Image Upload & Prediction
+![Prediction Example](screenshots/prediction1.png)
+
+3. Another Example
+![Another Prediction](screenshots/prediction2.png)
+
+Future Improvements
+-------------------
+-Deploy the app online using Streamlit Cloud once the dataset and model hosting issues are resolved.
+
+-Expand the model to classify more animal categories.
+
+Acknowledgments
+---------------
+-Dataset: Animals-10 from Kaggle
+
+-Model: FastAI, ResNet34 pretrained on ImageNet
+
+-Framework: Streamlit for the interactive web app
+
 Model Details
 --------------
 pred, pred_idx, probs = learn.predict(image)
