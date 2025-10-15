@@ -23,12 +23,15 @@ Files in Repository
 How to use
 ----------
 1. Clone this repository to your local machine:
-       git clone <repository_url>
-       cd Animal-Image-Classifier
+
+    git clone <repository_url>
+    
+    cd Animal-Image-Classifier
    
 2. Install the required Python packages
    
 3. Run the Streamlit app locally:
+   
       streamlit run streamlit_animal.py
    
 4. Upload an animal image through the app to get predictions with confidence scores.
