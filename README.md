@@ -47,12 +47,6 @@ Screenshots
 3. Another Example
 ![Another Prediction](screenshots/prediction2.png)
 
-Future Improvements
--------------------
--Deploy the app online using Streamlit Cloud once the dataset and model hosting issues are resolved.
-
--Expand the model to classify more animal categories.
-
 Acknowledgments
 ---------------
 -Dataset: Animals-10 from Kaggle
@@ -60,6 +54,10 @@ Acknowledgments
 -Model: FastAI, ResNet34 pretrained on ImageNet
 
 -Framework: Streamlit for the interactive web app
+
+Results
+-------
+The web app can classify new animal images with high confidence scores (~95–99%) using only a few seconds per prediction, provided that the image is clear and falls under the type of animals the model has been trained on.
 
 Model Details
 --------------
