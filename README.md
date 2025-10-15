@@ -27,14 +27,16 @@ How to use
     git clone <repository_url>
     
     cd Animal-Image-Classifier
+
+2. Download the trained model file (`animal_classifier.pkl`) from [Google Drive]([https://drive.google.com/...](https://drive.google.com/file/d/1CZwJ3Ma8EXwVSFpr31bLYKGRIhVh7lpi/view?usp=sharing).
    
-2. Install the required Python packages
+3. Install the required Python packages
    
-3. Run the Streamlit app locally:
+4. Run the Streamlit app locally:
    
       streamlit run streamlit_animal.py
    
-4. Upload an animal image through the app to get predictions with confidence scores.
+5. Upload an animal image through the app to get predictions with confidence scores.
 
 Screenshots
 -----------
