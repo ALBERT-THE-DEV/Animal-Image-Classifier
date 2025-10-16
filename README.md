@@ -28,8 +28,7 @@ Steps to run the program
     
     cd Animal-Image-Classifier
 
-2. Download the trained model file (animal_classifier.pkl) from
-   [Google Drive]([(https://drive.google.com/file/d/1CZwJ3Ma8EXwVSFpr31bLYKGRIhVh7lpi/view?usp=sharing)]).
+2. Download the trained model file (animal_classifier.pkl) from [Google Drive ([(https://drive.google.com/file/d/1CZwJ3Ma8EXwVSFpr31bLYKGRIhVh7lpi/view?usp=sharing)]).
    
 4. Install the required packages:
 
