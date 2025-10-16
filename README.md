@@ -28,17 +28,18 @@ Steps to run the program
     
     cd Animal-Image-Classifier
 
-2. Download the trained model file (animal_classifier.pkl) from [Google Drive]([(https://drive.google.com/file/d/1CZwJ3Ma8EXwVSFpr31bLYKGRIhVh7lpi/view?usp=sharing)]).
+2. Download the trained model file (animal_classifier.pkl) from
+   [Google Drive]([(https://drive.google.com/file/d/1CZwJ3Ma8EXwVSFpr31bLYKGRIhVh7lpi/view?usp=sharing)]).
    
-3. Install the required packages:
+4. Install the required packages:
 
      pip install -r requirements.txt
    
-4. Run the Streamlit app locally:
+5. Run the Streamlit app locally:
    
      streamlit run streamlit_animal.py
    
-5. Upload an animal image through the app to get predictions with confidence scores.
+6. Upload an animal image through the app to get predictions with confidence scores.
 
 Screenshots
 -----------
