@@ -20,17 +20,17 @@ Files in Repository
   
 -requirements.txt: Python packages required to be installed
 
-How to use
-----------
+Steps to run the program 
+------------------------
 1. Clone this repository to your local machine:
 
     git clone <repository_url>
     
     cd Animal-Image-Classifier
 
-2. Download the trained model file (animal_classifier.pkl) from [Google Drive]([https://drive.google.com/...](https://drive.google.com/file/d/1CZwJ3Ma8EXwVSFpr31bLYKGRIhVh7lpi/view?usp=sharing).
+2. Download the trained model file (animal_classifier.pkl) from [Google Drive]([(https://drive.google.com/file/d/1CZwJ3Ma8EXwVSFpr31bLYKGRIhVh7lpi/view?usp=sharing)]).
    
-3. Install the required Python packages:
+3. Install the required packages:
 
      pip install -r requirements.txt
    
@@ -65,9 +65,11 @@ The web app can classify new animal images with high confidence scores (~95–99
 
 Model Details
 --------------
+The equation that describes the model's learning process is:
+
 pred, pred_idx, probs = learn.predict(image)
 
-Where:
+Where,
 
 -pred → Predicted animal class
 
