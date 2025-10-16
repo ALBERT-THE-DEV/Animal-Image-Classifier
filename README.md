@@ -18,7 +18,7 @@ Files in Repository
 -------------------
 -streamlit_animal.py: Streamlit web application
   
--requirements.txt: Python packages required to be installed
+-requirements.txt: Packages required to be installed
 
 Steps to run the program 
 ------------------------
