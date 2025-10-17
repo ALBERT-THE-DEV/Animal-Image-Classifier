@@ -2,7 +2,7 @@ import streamlit as st
 from fastai.vision.all import *
 import pathlib
 
-# Fixes Linux→Windows model compatibility(Colab runs on Linux OS)
+# Colab to Windows compatibility
 temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 
@@ -67,6 +67,7 @@ if uploaded_file is not None:
 
 else:
     st.info("Upload an animal image file to start classification.")
+
 
 
 
