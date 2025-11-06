@@ -1,6 +1,6 @@
 # Animal-Image-Classifier (FastAI)
 
-This is a sample project that showcases an animal image classifier web application that classifies images of animals into 10 categories using a ResNet34 model trained with FastAI. User uploads an image to get predictions with confidence scores.
+This is a project that showcases an animal image classifier web application that classifies images of animals into 10 categories using a ResNet34 model trained with FastAI. User uploads an image to get predictions with confidence scores.
 
 Project Overview
 ----------------
