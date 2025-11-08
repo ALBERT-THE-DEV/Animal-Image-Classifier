@@ -42,7 +42,7 @@ with st.sidebar:
     st.markdown("Tip: Upload a clear animal image for better predictions")
 
 # Main Page Portion
-st.title("Animal Image Classifier")
+st.title("FaunaLens")
 st.write("Upload an animal image to predict its type")
 
 st.markdown("---")
@@ -67,6 +67,7 @@ if uploaded_file is not None:
 
 else:
     st.info("Upload an animal image file to start classification.")
+
 
 
 
