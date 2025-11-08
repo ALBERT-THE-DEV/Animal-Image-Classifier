@@ -63,20 +63,6 @@ Results
 -------
 The web app can classify new animal images with high confidence scores (~95–99%) using only a few seconds per prediction, provided that the image is clear and falls under the type of animals the model has been trained on.
 
-Model Details
---------------
-The equation that describes the model's learning process is:
-
-pred, pred_idx, probs = learn.predict(image)
-
-Where,
-
--pred → Predicted animal class
-
--pred_idx → The index of the predicted class in the model’s vocabulary
-
--probs → Probabilities for all 10 classes
-
 Model Performance
 -----------------
 During training, the ResNet34 model achieved strong performance on the Animals-10 dataset. Over 5 epochs, the model’s validation accuracy steadily improved from 96.01% in the first epoch to 98.19% by the fifth epoch, with decreasing validation loss from 0.126 to 0.077. The training loss also dropped from 0.138 to 0.013, indicating effective learning and convergence. These metrics demonstrate that the model fits the training data very well. On new images outside the training set, the model performs accurately on clear and representative images of animals, though occasional misclassifications may occur for ambiguous or low-quality inputs.
