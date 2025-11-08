@@ -1,6 +1,6 @@
 # Animal-Image-Classifier (FastAI)
 
-This is a project that showcases an animal image classifier web application that classifies images of animals into 10 categories using a ResNet34 model trained with FastAI. User uploads an image to get predictions with confidence scores.
+This is a learning project that showcases an animal image classifier web application that classifies images of animals into 10 categories using a ResNet34 model trained with FastAI. User uploads an image to get predictions with confidence scores.
 
 Project Overview
 ----------------
@@ -19,26 +19,6 @@ Files in Repository
 -streamlit_animal.py: Streamlit web application
   
 -requirements.txt: Packages required to be installed
-
-Steps to run the program 
-------------------------
-1. Clone this repository to your local machine:
-
-    git clone <repository_url>
-    
-    cd Animal-Image-Classifier
-
-2. Download the trained model file (animal_classifier.pkl) from [Google Drive ([(https://drive.google.com/file/d/1CZwJ3Ma8EXwVSFpr31bLYKGRIhVh7lpi/view?usp=sharing)]).
-   
-4. Install the required packages:
-
-     pip install -r requirements.txt
-   
-5. Run the Streamlit app locally:
-   
-     streamlit run streamlit_animal.py
-   
-6. Upload an animal image through the app to get predictions with confidence scores.
 
 Screenshots
 -----------
